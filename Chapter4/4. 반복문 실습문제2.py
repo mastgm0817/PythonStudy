@@ -8,15 +8,23 @@
 # 3. 프로그램 사용자는 단어를 그대로 입력하고
 # 4. 맞추면 다음 단어를 가져온다. 틀리면 프로그램 종료.
 
+from tkinter import E
+
+
 words_dictionary = {"apple": "사과", "banana": "바나나",
                     "chocolate": "초콜렛", "American": "미국인", "soccer": "축구"}
 
 
 english = list(words_dictionary.keys())
 korean = list(words_dictionary.values())
+score = 0
 
 for i in range(0, len(english) - 1):
     print(f"문제: {english[i]}")
     answer = input("정답은?>>>")
     if answer != korean[i]:
+        print(f"전체문제는: {len(english)} 개")
+        print(f"맞춘개수는: {score} 개")
         break
+    else:
+        score += 1
