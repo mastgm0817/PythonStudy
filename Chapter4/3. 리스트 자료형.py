@@ -52,3 +52,5 @@ print(animals)
 
 animals.sort(reverse=True)  # 거꾸로 정렬하기
 print(animals)
+
+# 깃테스트
