@@ -25,6 +25,7 @@ for i in range(0, len(english) - 1):
     if answer != korean[i]:
         print(f"전체문제는: {len(english)} 개")
         print(f"맞춘개수는: {score} 개")
+        print(f"틀린개수는: {len(english) - score} 개")
         break
     else:
         score += 1
