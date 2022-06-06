@@ -13,3 +13,5 @@ print(ceil(2.7))
 # pip install piautogui
 
 pg.moveTo(500, 500, duration=2)  # 화면에 500,500 위치로 2초동안 이동해라
+
+
